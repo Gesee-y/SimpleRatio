@@ -152,13 +152,13 @@ SRational(v::AbstractFloat;skip = false) = begin
 
 	decimal_part_length = _number_of_digit(v)
 	d = 10^decimal_part_length
-	n = Int(v*d)
+	n = Int(round(v*d))
 	
 	return SRational(n,d;skip = skip)
 end
 SRational(v::AbstractFloat,prec::Int;skip = false) = begin
 	d = 10^prec
-	n = Int(v*d)
+	n = Int(round(v*d))
 	
 	return SRational(n,d;skip = skip)
 end
@@ -181,13 +181,13 @@ MRational(v::AbstractFloat) = begin
 
 	decimal_part_length = _number_of_digit(v)
 	d = 10^decimal_part_length
-	n = Int(v*d)
+	n = Int(round(v*d))
 	
 	return MRational(n,d)
 end
 MRational(v::AbstractFloat,prec::Int) = begin
 	d = 10^prec
-	n = Int(v*d)
+	n = Int(round(v*d))
 	
 	return MRational(n,d)
 end
