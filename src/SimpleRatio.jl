@@ -10,16 +10,9 @@ include("printing.jl")
 """
     SimpleRatio
 
-Module qui implemente des nombres rationnels simples, sans simplification automatique,
-pour permettre des calculs plus rapides tout en restant leger.
+Module that implement simple rational numbers, without automated simplification, to allow faster computing while being light.
 
-Contient des types de donnees, des operations arithmetiques, et des utilitaires d'affichage
-pour manipuler ces rationnels.
-
-Fonctions disponibles :
-- SRational: cree un nombre rationnel simple.
-- Operations: addition, soustraction, multiplication, division, etc.
-- Affichage personnalise.
+Provides data types, arithmetics operations and printing utilities to use rationals
 
 """
 
